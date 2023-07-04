@@ -141,7 +141,7 @@ function showNewUser(user) {
     const childHTML = `<li id=${user.id}> ${user.amount} - ${user.description} - ${user.category}
     <button onclick=editExpense('${user._id}','${user.amount}','${user.description}','${user.category}')
         class='btn btn-sm btn-warning'>Edit</button>
-        <button onclick=deleteUser('${user.id}','${user.amount}') class='btn btn-sm btn-danger'>Delete User</button>
+        <button onclick=deleteUser('${user.id}','${user.amount}') class='btn btn-sm btn-danger'>Delete</button>
         </li>`;
     parentNode.innerHTML = parentNode.innerHTML + childHTML;
   } catch (err) {
